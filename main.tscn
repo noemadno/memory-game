@@ -1,0 +1,34 @@
+[gd_scene load_steps=8 format=3 uid="uid://6lmhdcimf0he"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_eqmqf"]
+[ext_resource type="Texture2D" uid="uid://ci4pjco6nlr51" path="res://assets/cheeseburger.png" id="2_8n7ex"]
+[ext_resource type="Texture2D" uid="uid://5c433l7l8s11" path="res://assets/fries.png" id="3_xsbe1"]
+[ext_resource type="Texture2D" uid="uid://bixjlagse8yy7" path="res://assets/hotdog.png" id="4_ymids"]
+[ext_resource type="Texture2D" uid="uid://dv2s71ao82ojr" path="res://assets/ice-cream.png" id="5_1rvcy"]
+[ext_resource type="Texture2D" uid="uid://ddp423yo1td4k" path="res://assets/milkshake.png" id="6_mw8ox"]
+[ext_resource type="Texture2D" uid="uid://2owyhwo7rckg" path="res://assets/pizza.png" id="7_e227m"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eqmqf")
+fruits_images = Array[Texture]([ExtResource("2_8n7ex"), ExtResource("3_xsbe1"), ExtResource("4_ymids"), ExtResource("5_1rvcy"), ExtResource("6_mw8ox"), ExtResource("7_e227m")])
+
+[node name="FruitsGrid" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -421.0
+offset_top = -304.0
+offset_right = 421.0
+offset_bottom = 304.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 4
